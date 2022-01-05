@@ -8,7 +8,7 @@
   --accent-color: #2196f3;
 }
 
-body {
+.body {
   font-family: Roboto, sans-serif;
   background-color: #e5e5e5;
 }
@@ -70,6 +70,7 @@ img {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -147,7 +148,7 @@ img {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1/36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -182,7 +183,8 @@ img {
 
 .feature {
   background-color: var(--first-title-color);
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-list {
@@ -297,12 +299,12 @@ img {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
 }
 
-.nav-item {
+.nav-btn {
   font-family: Roboto;
   display: flex;
   font-style: normal;
@@ -322,10 +324,9 @@ img {
   padding: 6px 22px;
 }
 
-.nav-item:not(:last child) {
+.nav-btn {
   margin-right: 8px;
 }
-
 /* -------------PORTFOLIO--------------- */
 
 .portfolio {
@@ -345,6 +346,7 @@ img {
   height: 404px;
   margin-left: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
   background-color: var(--second-btn-color);
 }
 
@@ -356,8 +358,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-title-color);
-  margin-top: 20px;
-  padding-left: 24px;
 }
 
 .portfolio-img-text {
@@ -369,7 +369,9 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 4px;
-  padding-left: 24px;
+}
+.portfolio-item-text {
+  padding: 20px 24px;
 }
 
 /* ----------FOOTER--------------------- */
@@ -378,6 +380,10 @@ img {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-item {
+  margin-bottom: 9px;
 }
 
 .footer-link {
